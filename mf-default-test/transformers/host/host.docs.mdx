@@ -1,0 +1,15 @@
+---
+description: 'Webpack transformer for Module Federation host apps'
+---
+
+### Usage
+
+```typescript
+const { host } = require('@personal-micro-front/mf-default-test.transformers.host');
+
+module.exports.default = {
+  name: 'my-host-app',
+  entry: [require.resolve('./host.app-root')],
+  webpackTransformers: [host],
+};
+```

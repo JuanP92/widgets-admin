@@ -1,0 +1,15 @@
+---
+description: 'Webpack transformer for Module Federation remote apps'
+---
+
+### Usage
+
+```typescript
+const { remote } = require('@personal-micro-front/mf-default-test.transformers.remote');
+
+module.exports.default = {
+  name: 'my-remote-app',
+  entry: [require.resolve('./remote.app-root')],
+  webpackTransformers: [remote],
+};
+```

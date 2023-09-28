@@ -1,0 +1,74 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "widgets-admin",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "personal-micro-front.mf-default-test",
+    "resolveAspectsFromNodeModules": true,
+    "resolveEnvsFromRoots": true
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@learnbit-react/mf-demo.ui.auth-skeleton": "0.0.7",
+        "@learnbit/module-federation.mf-react-env": "0.0.15",
+        "@learnbit/styling.config.tailwind": "0.0.2",
+        "@learnbit/styling.transformers.tailwind": "0.0.5",
+        "@teambit/cloud-providers.deployers.netlify": "0.1.20",
+        "@teambit/dependencies.modules.packages-excluder": "^0.0.68",
+        "@teambit/docs.docs-template": "0.0.11",
+        "@teambit/mdx.ui.mdx-scope-context": "0.0.496",
+        "@teambit/node.node": "0.1.8",
+        "@teambit/preview.react-preview": "0.0.35",
+        "@teambit/react.mounter": "0.0.10",
+        "@teambit/react.react-env": "0.1.7",
+        "eslint": "^7.28.0",
+        "webpack": "^5.88.0"
+      },
+      "peerDependencies": {}
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
+  },
+  "teambit.workspace/workspace-config-files": {
+    "enableWorkspaceConfigWrite": true
+  },
+  "teambit.generator/generator": {
+    "envs": [
+      "personal-micro-front.mf-default-test/envs/my-mf-react-env"
+    ]
+  },
+  "personal-micro-front.mf-default-test/host-app": {},
+  "personal-micro-front.mf-default-test/remote-app": {}
+}

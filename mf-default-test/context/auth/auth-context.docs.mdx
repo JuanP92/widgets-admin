@@ -1,0 +1,32 @@
+---
+description: Context component to handle the auth logic in 2 module federation apps
+labels: ['context']
+---
+
+import { AuthProvider } from './auth-context-provider';
+
+## React Theme Context
+
+This is a simple [React Context](https://reactjs.org/docs/context.html) shared as a Bit component.
+Use this component to share data between components without having to pass props down manually at every level.
+
+### Component usage
+
+```tsx
+import React from 'react';
+import { AuthProvider, useAuth } from '@personal-micro-front/mf-default-test.context.auth';
+
+/* demo component */
+const IsLoggedIn = () => {
+  const { auth } = useAuth();
+  return <div>{isLoggedIn ? 'Logged in' : 'Not logged in'}</div>;
+};
+
+export const BasicUsage = () => {
+  return (
+    <AuthProvider>
+      <DisplayLanguage />
+    </AuthProvider>
+  );
+};
+```
