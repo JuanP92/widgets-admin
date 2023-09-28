@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -46,14 +46,27 @@
         "@learnbit/styling.config.tailwind": "0.0.2",
         "@learnbit/styling.transformers.tailwind": "0.0.5",
         "@teambit/cloud-providers.deployers.netlify": "0.1.20",
-        "@teambit/dependencies.modules.packages-excluder": "^0.0.68",
-        "@teambit/docs.docs-template": "0.0.11",
-        "@teambit/mdx.ui.mdx-scope-context": "0.0.496",
+        "@teambit/defender.eslint-linter": "1.0.8",
+        "@teambit/defender.jest-tester": "1.0.5",
+        "@teambit/defender.prettier-formatter": "1.0.2",
+        "@teambit/dependencies.modules.packages-excluder": "1.0.2",
+        "@teambit/docs.docs-template": "1.0.3",
+        "@teambit/envs.docs.env-overview-template": "0.0.2",
+        "@teambit/mdx.ui.mdx-scope-context": "1.0.0",
         "@teambit/node.node": "0.1.8",
-        "@teambit/preview.react-preview": "0.0.35",
-        "@teambit/react.mounter": "0.0.10",
+        "@teambit/preview.react-preview": "1.0.8",
+        "@teambit/react.apps.react-app-types": "1.0.8",
+        "@teambit/react.eslint-config-bit-react": "1.0.22",
+        "@teambit/react.generator.react-starters": "1.0.1",
+        "@teambit/react.generator.react-templates": "1.0.3",
+        "@teambit/react.jest.react-jest": "1.0.5",
+        "@teambit/react.mounter": "1.0.2",
         "@teambit/react.react-env": "0.1.7",
-        "eslint": "^7.28.0",
+        "@teambit/typescript.typescript-compiler": "2.0.7",
+        "@testing-library/jest-dom": "5.16.5",
+        "@types/eslint": "7.28.0",
+        "eslint": "7.32.0",
+        "typescript": "5.1.3",
         "webpack": "^5.88.0"
       },
       "peerDependencies": {}
@@ -66,7 +79,8 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "personal-micro-front.mf-default-test/envs/my-mf-react-env"
+      "personal-micro-front.mf-default-test/envs/react-mf-env",
+      "personal-micro-front.mf-default-test/react-env"
     ]
   },
   "personal-micro-front.mf-default-test/host-app": {},

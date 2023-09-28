@@ -9,6 +9,12 @@
  */
 
 {
+    "components/cronometro": {
+        "scope": "",
+        "version": "7d04a8f927c77ad064e01e80acb49e99059100a2",
+        "mainFile": "index.js",
+        "rootDir": "mf-default-test/components/cronometro"
+    },
     "context/auth": {
         "scope": "",
         "version": "",
@@ -87,6 +93,12 @@
                 }
             }
         }
+    },
+    "react-env": {
+        "scope": "",
+        "version": "b7ab26c676190e504c75bccbcb2a954da7c78f4d",
+        "mainFile": "index.ts",
+        "rootDir": "mf-default-test/react-env"
     },
     "remote-app": {
         "scope": "",
