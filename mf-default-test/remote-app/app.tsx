@@ -6,7 +6,7 @@ let Cronometro: any = null;
 
 try {
   Cronometro = React.lazy(
-    () => import('@personal-micro-front/mf-default-test.components.cronometro@0.0.1')
+    () => import('@personal-micro-front/mf-default-test.components.cronometro')
   );
 } catch (e) {
   Cronometro = () => <div>Module not found</div>;
