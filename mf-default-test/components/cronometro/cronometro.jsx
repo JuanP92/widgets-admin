@@ -1,9 +1,17 @@
 import React from 'react';
 
-export function Cronometro() {
+export default function Cronometro() {
   const [time, setTime] = React.useState(0);
   const [start, setStart] = React.useState(false);
   const intervalRef = React.useRef(0);
+  const format = React.useMemo(() => {
+    if (time === 0) {
+      return '00:00';
+    }
+    const min = Math.floor(time / 60);
+    const seg = Math.floor(time % 60);
+    return `${min < 10 ? '0' : ''}${min}:${seg < 10 ? '0' : ''}${seg}`;
+  }, [time]);
 
   React.useEffect(() => {
     if (start) {
@@ -23,13 +31,21 @@ export function Cronometro() {
       style={{
         display: 'flex',
         flexDirection: 'column',
+        alignItems: 'center',
+        gap: 20,
       }}
     >
-      <h2>{time}</h2>
+      <h2
+        style={{
+          fontSize: 24,
+        }}
+      >
+        {format}
+      </h2>
       <div
         style={{
           display: 'flex',
-          gap: 10,
+          gap: 20,
         }}
       >
         {start ? (

@@ -1,1 +1,1 @@
-export { Cronometro } from './cronometro';
+export { default } from './cronometro';

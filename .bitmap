@@ -10,8 +10,8 @@
 
 {
     "components/cronometro": {
-        "scope": "",
-        "version": "7d04a8f927c77ad064e01e80acb49e99059100a2",
+        "scope": "personal-micro-front.mf-default-test",
+        "version": "0.0.2",
         "mainFile": "index.js",
         "rootDir": "mf-default-test/components/cronometro"
     },
@@ -95,70 +95,29 @@
         }
     },
     "react-env": {
-        "scope": "",
-        "version": "b7ab26c676190e504c75bccbcb2a954da7c78f4d",
+        "scope": "personal-micro-front.mf-default-test",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "mf-default-test/react-env"
     },
     "remote-app": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "personal-micro-front.mf-default-test",
+        "scope": "personal-micro-front.mf-default-test",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "mf-default-test/remote-app",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.harmony/application": {},
-            "learnbit-react.mf-demo/envs/react-mf-env@0.0.8": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.mf-demo/envs/react-mf-env"
-            },
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "learnbit-react.mf-demo",
-                    "name": "remote-app",
-                    "version": "0.0.12"
-                }
-            }
-        }
+        "rootDir": "mf-default-test/remote-app"
     },
     "transformers/host": {
         "scope": "",
-        "version": "c828c1d54d2721bb4ca32857ddaf0662e74a0a35",
+        "version": "",
         "defaultScope": "personal-micro-front.mf-default-test",
         "mainFile": "index.ts",
         "rootDir": "mf-default-test/transformers/host"
     },
     "transformers/remote": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "personal-micro-front.mf-default-test",
+        "scope": "personal-micro-front.mf-default-test",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mf-default-test/transformers/remote",
-        "config": {
-            "teambit.node/node@0.1.8": {},
-            "teambit.envs/envs": {
-                "env": "teambit.node/node"
-            },
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "learnbit-react.mf-demo",
-                    "name": "transformers/remote",
-                    "version": "0.0.8"
-                }
-            }
-        }
+        "rootDir": "mf-default-test/transformers/remote"
     },
     "$schema-version": "16.0.0"
 }
